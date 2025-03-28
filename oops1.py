@@ -13,11 +13,11 @@ class employee:
         print(f"Employee is now travelling to {destination}")
 
 
-# create an obj/instance of the class 
+# create an obj/instance of the class
 sam = employee()
 
 # printing the attribute
-#print(sam.id)
+# print(sam.id)
 
 # calling the method
 sam.travel("Kerala")
