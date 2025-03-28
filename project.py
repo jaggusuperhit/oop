@@ -1,30 +1,49 @@
 class chatbook:
     def __init__(self):
-        self.username =''
+        self.username = ''
         self.password = ''
         self.loggedin = False
         self.menu()
 
-
     def menu(self):
-        user_input = input("welcome to chatbook !! how would you like to proceed ?"
-        "1. press 1 to signup"
-        "2. press 2 signin"
-        "3. press 3 to write a post"
-        "4. press 4 to message a friend"
-        "5. Press any other key a to exit")
+        user_input = input("""welcome to chatbook !! how would you like to proceed ?
+1. press 1 to signup
+2. press 2 to signin
+3. press 3 to write a post
+4. press 4 to message a friend
+5. Press any other key to exit\n""")
 
         if user_input == "1":
-            pass
+            self.signup()
         elif user_input == "2":
-            pass
+            self.signin()
         elif user_input == "3":
-            pass
+            pass  # Add post writing functionality later
         elif user_input == "4":
-            pass
+            pass  # Add messaging functionality later
         else:
             exit()
+    
+    def signup(self):
+        email = input("enter your email here -> ")
+        pwd = input("setup your password here -> ")
+        self.username = email
+        self.password = pwd
+        print("You have signed up successfully\n")
+        self.menu()
 
-#obj = chatbook()  
-   
+    def signin(self):
+        if self.username == '' and self.password == '':
+            print('please signup first by pressing 1 in the main menu')
+        else:
+            uname = input("enter your email/username here -> ")
+            pwd = input("enter your password here -> ")
+            if self.username == uname and self.password == pwd:
+                print('you have signed in successfully')
+                self.loggedin = True
+            else:
+                print("please input correct credentials..")
+        print("\n")
+        self.menu()       
 
+obj = chatbook()
