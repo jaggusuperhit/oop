@@ -13,11 +13,14 @@
     > magic method or dunder method
     > self
     > You can create attribute outside class as well
-
-    
     > encapsulation
     > getter and setter
     > static method
 
-    > Inheritence
-
+6. Inheritence
+    > Inheritence code example
+    > why inheritence is needed ?(code reusability, parent has no acces to child class)
+    > what gets inherited? - Constrtuctor, Non private attributes, Non private methods
+    > Constrtuctor overloading & method overloading
+    > Super keyword(can be used only inside class, can not access variables/attributes, used only inside child class)
+    > Types of Inheritence - 1. Single Inheritence | 2. Multilevel | 3. Hierarchical | 4. Multiple <Diamond Problem> | 5. Hybrid
