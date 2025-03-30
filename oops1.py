@@ -16,9 +16,9 @@ class employee:
 
 # create an obj/instance of the class
 # self = object
-sam = employee() 
-# sam.name = "sam kumar"  
-# print(sam.name)        
+sam = employee()
+# sam.name = "sam kumar"
+# print(sam.name)
 # print(id(sam))
 
 # shaktiman = employee()
@@ -27,6 +27,6 @@ sam = employee()
 
 
 # calling the method
-#sam.travel("Kerala")
+# sam.travel("Kerala")
 
 # print(type(sam))

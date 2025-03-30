@@ -11,17 +11,19 @@ class chatbook:
         self.loggedin = False
         self.posts = []  # Store user posts
         self.messages = {}  # Store messages {recipient: [messages]}
-        #self.menu()
+        # self.menu()
 
     @staticmethod
     def get_id(self):
         return chatbook.__user_id
+
     def set_id(val):
         chatbook.__user_id = val
 
     def get_name(self):
         return self.__name
-    def set_name(self,value):
+
+    def set_name(self, value):
         self.__name = value
 
     def menu(self):
@@ -34,7 +36,7 @@ class chatbook:
 5. Press any other key to exit\n"""
         )
 
-        if user_input == "1":    # Always user input comes in type of string
+        if user_input == "1":  # Always user input comes in type of string
             self.signup()
         elif user_input == "2":
             self.signin()

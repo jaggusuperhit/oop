@@ -45,8 +45,6 @@ from project import chatbook
 # user1 = chatbook()
 # user1.sendmsg()
 
-# function 
+# function
 # a = len(lst)
 # print(a)
-
-
